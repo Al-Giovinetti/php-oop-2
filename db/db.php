@@ -10,7 +10,7 @@ $categories = [
 $products = [
     new Product("Crocchette",
     "",
-    $category[0],
+    $categories[0],
     "triangolari ripiene di pollo",
     3.5)
 ]
