@@ -8,7 +8,7 @@ class Product{
     public $price;
 
     //costruttore
-    function __construct(String $_name, String $_img, String $_category, String $_description,  Float $_price){
+    function __construct(String $_name, String $_img, Category $_category, String $_description,  Float $_price){
         $this->name = $_name;
         $this->img =  $_img;
         $this->category = $_category;
