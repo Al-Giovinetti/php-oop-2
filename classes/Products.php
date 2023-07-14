@@ -2,14 +2,18 @@
 class Product{
     //propietà
     public $name;
-    public $price;
+    public $img;
+    public $category;
     public $description;
+    public $price;
 
     //costruttore
-    function __construct(String $_name, Float $_price, String $_description){
+    function __construct(String $_name, String $_img, String $_category, String $_description,  Float $_price){
         $this->name = $_name;
-        $this->price = $_price;
-        $this->description = $_description;    
+        $this->img =  $_img;
+        $this->category = $_category;
+        $this->description = $_description;  
+        $this->price = $_price;  
     }
 }
 ?>
