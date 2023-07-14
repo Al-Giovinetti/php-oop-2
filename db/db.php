@@ -3,8 +3,8 @@ include_once __DIR__ . "/../classes/Product.php";
 include_once __DIR__ . "/../classes/Category.php";
 
 $categories = [
-    new Category("For Cats",""),
-    new Category("For Dog",""),
+    new Category("For Cats","fa-solid fa-shield-cat"),
+    new Category("For Dog","fa-solid fa-shield-dog"),
 ];
 
 $products = [
