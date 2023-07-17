@@ -1,10 +1,15 @@
 <?php
 include_once __DIR__ . "/../classes/Product.php";
 include_once __DIR__ . "/../classes/Category.php";
+include_once __DIR__ . "/../classes/Food.php";
+include_once __DIR__ . "/../classes/Toy.php";
+include_once __DIR__ . "/../classes/Structure.php";
+
 
 
 $forCats = new Category("For Cats","fa-solid fa-shield-cat");
 $forDogs = new Category("For Dog","fa-solid fa-shield-dog");
+
 
 
 $products = [

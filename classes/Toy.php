@@ -1,4 +1,7 @@
 <?php
+
+include_once __DIR__ . "/Product.php";
+
 Class Toy extends Product {
     public $material;
     public $itSound;
@@ -8,5 +11,6 @@ Class Toy extends Product {
         $this->material = $_material;
         $this->itSound = $_itSound;
     }
+
 }
 ?>

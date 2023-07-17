@@ -1,4 +1,7 @@
 <?php
+
+include_once __DIR__ . "/Product.php";
+
 Class Structure extends Product {
     public $material;
     public $heigthInCm;
