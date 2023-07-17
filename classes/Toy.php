@@ -6,8 +6,8 @@ Class Toy extends Product {
     public $material;
     public $itSound;
 
-    function __construct(String $_name, String $_img, Category $_category, String $_description, Float $_price, String $_material, Bool $_itSound){
-        parent :: __construct($_name, $_img, $_category, $_description, $_price);
+    function __construct(String $_name, String $_img, Category $_category, String $_description, Float $_price, String $_age, String $_material, Bool $_itSound){
+        parent :: __construct($_name, $_img, $_category, $_description, $_price, $_age);
         $this->material = $_material;
         $this->itSound = $_itSound;
     }

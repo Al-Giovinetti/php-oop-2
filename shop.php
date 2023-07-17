@@ -37,6 +37,9 @@ include __DIR__ . "/db/db.php";
                                         <p>
                                             <?php echo $product->description ; ?>
                                         </p>
+                                        <p>
+                                            <strong> Recommended for <?php echo $product->age ;?> age </strong>
+                                        </p>
                                         <?php if (get_class($product) === "Food") { ?>
                                             <ul>
                                                 <li> Calories : kcal <?php echo $product->calories ?> </li>
