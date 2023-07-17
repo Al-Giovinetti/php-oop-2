@@ -37,6 +37,22 @@ include __DIR__ . "/db/db.php";
                                         <p>
                                             <?php echo $product->description ; ?>
                                         </p>
+                                        <?php if (get_class($product) === "Food") { ?>
+                                            <ul>
+                                                <li> Calories : kcal <?php echo $product->calories ?> </li>
+                                                <li> Fat : <?php echo $product->fat ?> %</li>
+                                            </ul>
+                                        <?php } elseif (get_class($product) === "Toy") { ?>
+                                            <ul>
+                                                <li> Material: <?php echo $product->material ?> </li>
+                                                <li> It sound :  <?php echo $product->thereIsSound() ?> </li>
+                                            </ul>
+                                        <?php } elseif (get_class($product) === "Structure") { ?>
+                                            <ul>
+                                                <li> Material: <?php echo $product-> material ?> </li>
+                                                <li> Heaigth: Cm  <?php echo $product->heigthInCm ?> </li>
+                                            </ul>
+                                        <?php } ?>
                                         <span>
                                             € <?php echo $product->price ; ?>
                                         </span>

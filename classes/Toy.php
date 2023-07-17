@@ -12,5 +12,13 @@ Class Toy extends Product {
         $this->itSound = $_itSound;
     }
 
+    public function thereIsSound(){
+        if ($this->itSound == False){
+            return "no";
+        }else{
+            return "yes";
+        }
+    }
+
 }
 ?>
